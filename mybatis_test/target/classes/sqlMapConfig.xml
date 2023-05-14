@@ -1,0 +1,14 @@
+<configuration>
+    <!-- 1.配置数据库信息   -->
+    <dataSource>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://81.70.40.114:3306/mybatis?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=UTC"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="wangxinyu"></property>
+    </dataSource>
+
+    <!--  2.引入配置文件  -->
+    <mappers>
+        <mapper resource="mapper/userMapper.xml"></mapper>
+    </mappers>
+</configuration>

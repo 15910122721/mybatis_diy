@@ -1,0 +1,13 @@
+<mapper namespace="user">
+<!-- 唯一标识： namespace.id statementId -->
+
+    <select id="selectList" resultType="com.wxy.domain.User">
+        select * from user
+    </select>
+
+    <select id="selectOne" resultType="com.wxy.domain.User" parameterType="com.wxy.domain.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+
+
+</mapper>
