@@ -1,6 +1,7 @@
-<mapper namespace="user">
+<mapper namespace="com.wxy.mapper.UserMapper">
 <!-- 唯一标识： namespace.id statementId -->
 
+<!--  规范：接口的全路径要和namespace的值保持一直；接口中的方法名要和id的值保持一致  -->
     <select id="selectList" resultType="com.wxy.domain.User">
         select * from user
     </select>

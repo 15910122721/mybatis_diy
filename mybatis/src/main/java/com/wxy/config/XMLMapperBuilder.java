@@ -14,7 +14,7 @@ public class XMLMapperBuilder {
 
     private Configuration configuration;
 
-    public XMLMapperBuilder(Configuration configuration){
+    public XMLMapperBuilder(Configuration configuration) {
         this.configuration = configuration;
     }
 
@@ -44,6 +44,7 @@ public class XMLMapperBuilder {
             mappedStatement.setParameterType(parameterType);
             mappedStatement.setResultType(resultType);
             mappedStatement.setSql(sql);
+            mappedStatement.setSqlCommandType("select");
 
             configuration.getMappedStatementMap().put(statementId, mappedStatement);
         }

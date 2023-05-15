@@ -27,6 +27,23 @@ public class MappedStatement {
      */
     private String sql;
 
+    /**
+     * 判断当前是什么操作的一个属性
+     * select
+     * update
+     * delete
+     * insert
+     */
+    private String sqlCommandType;
+
+    public String getSqlCommandType() {
+        return sqlCommandType;
+    }
+
+    public void setSqlCommandType(String sqlCommandType) {
+        this.sqlCommandType = sqlCommandType;
+    }
+
     public String getStatementId() {
         return statementId;
     }
